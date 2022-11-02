@@ -18,7 +18,9 @@ function main(){
     let show = document.getElementById("show-me");
     show.style.display = "block";
 
-    let input = document.getElementById("name");
-
+    let name = document.getElementById("name").value;
+    
+    alert("Welcome " + `${name}`);
+    console.log("Welcome " + `${name}`);
 }
 
