@@ -18,9 +18,11 @@ function main(){
     let show = document.getElementById("show-me");
     show.style.display = "block";
 
-    let name = document.getElementById("name").value;
-    
-    alert("Welcome " + `${name}`);
+    let name = document.createElement("h1");
+
+    name.innerText = `Welcome ${name}!`;
     console.log("Welcome " + `${name}`);
+
+    //couldn't figure out how to get the last part to work :(
 }
 
