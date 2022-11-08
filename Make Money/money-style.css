@@ -1,0 +1,48 @@
+#coinType {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  background-color: skyblue;
+  border-radius: 5px;
+}
+
+.penny {
+  width: 80px;
+  height: 80px;
+  background-color: chocolate;
+}
+
+.nickel {
+  width: 100px;
+  height: 100px;
+  background-color: silver;
+}
+
+.dime {
+  width: 70px;
+  height: 70px;
+  background-color: silver;
+}
+
+.quarter {
+  width: 120px;
+  height: 120px;
+  background-color: silver;
+}
+
+.coin-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.addCoin {
+  border-radius: 50%;
+  display: flex;
+  background-size: cover;
+}
