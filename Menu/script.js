@@ -1,30 +1,15 @@
-// let clickNumbers = document.querySelector("#numbers");
+const letters = document.getElementById('dropdown-letters');
+const numbers = document.getElementById('dropdown-numbers');
 
-// clickNumbers.addEventListener('click', showNumbers);
+const lettersPage = document.getElementById('letters');
+const numbersPage = document.getElementById('numbers');
 
-// function showNumbers(numbers){
-//     numbers.preventDefault();
-// }
+letters.addEventListener('click', () => {
+    lettersPage.classList.remove('hidden');
+    numbersPage.classList.add('hidden');
+    });
 
-    // let numbers = document.getElementById("number-page");
-    // numbers.style.display = "block";
-    // console.log(numbers);
-
-// let lettersHidden = document.getElementById("letter-page");
-//     lettersHidden.preventDefault();
-
-// let hideLetters = document.querySelector("#letters");
-
-// clickLetters.addEventListener('click', letterHidden)
-// function lettersHidden(hidden){
-// hidden.style.display = "none";
-// }
-
-document.getElementById("numbers").onclick = function() {
-    document.getElementById("letter-page").style.display = "none";
-
-    let showNumbers = document.getElementById("number-page");
-    showNumbers.preventDefault();
-
-    console.log(showNumbers);
-}
+numbers.addEventListener('click', () => {
+    lettersPage.classList.add('hidden');
+    numbersPage.classList.remove('hidden');
+    });
