@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: 10px;
+  line-height: 2em;
+}
+form label {
+  display: flex;
+  align-self: left;
+  font-size: 20px;
+  padding: 5px 0px;
+}
+
+button {
+  background-color: skyblue;
+  border-radius: 5px;
+  margin: 20px 0px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.penny {
+  width: 80px;
+  height: 80px;
+  content: url(./images/penny.jpeg);
+}
+
+
+.nickel {
+  width: 100px;
+  height: 100px;
+  content: url(./images/nickel.jpeg);
+}
+
+.dime {
+  width: 70px;
+  height: 70px;
+  content: url(./images/dime.jpeg);
+}
+
+.quarter {
+  width: 120px;
+  height: 120px;
+  content: url(./images/quarter.jpeg);
+}
+
+.coin-container {
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0px 5px;
+}

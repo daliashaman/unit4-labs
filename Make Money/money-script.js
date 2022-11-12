@@ -1,20 +1,17 @@
-let moneyForm = document.querySelector(".money-form");
-let coinContainer = document.querySelector(".coin-container");
+const form = document.querySelector("form");
+const coinContainer = document.querySelector("section");
 
-moneyForm.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let howMany = document.querySelector("#howMany").value;
-    let whichCoin = document.querySelector("#whichCoin").value;
+let data = new FormData(form)
+let n = data.get("amount")
+let coins = data.get("cointype")
+for (let i = 0; i < n; i++) {
+    coinContainer.innerHTML += `<div class=${coins}></div>`
+    }
+})
 
-    for (let i = 0; i < howMany; i++) {
-      let addCoin = document.createElement("");
-
-      addCoin.classList.add("coin", type);
-      addCoin.textContent = whichCoin;
-      coinContainer.append(addCoin);
-      addCoin.addEventListener("click", () => {
-        addCoin.remove();
-      });
-    };
-  });
+coinContainer.addEventListener('click', function coins(event){
+    event.target.remove();
+});

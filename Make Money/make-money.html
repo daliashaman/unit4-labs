@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="money-style.css">
-    <title>Make Money</title>
+    <link rel="stylesheet" href="money-styles.css">
+    <title>Make Money Lab</title>
 </head>
 <body>
     <h1>Make Money</h1>
-    <div>
-        <form class="moneyForm">
-          <label for="amount">How Many?</label>
+        <form class="form">
+          <label>How many?</label>
           <input type="number" name="amount" id="howMany">
-          <label for="type">Which Coin?</label>
-          <select name="type" id="coinType">
+
+          <label for="coin">Which coin?</label>
+          <select name="cointype">
             <option value="penny">Penny</option>
             <option value="nickel">Nickel</option>
             <option value="dime">Dime</option>
             <option value="quarter">Quarter</option>
           </select>
-          <button class="button">Make Money</button>
+
+          <button class="button" type="submit">Make Money</button>
         </form>
-        <ul class="coin-container"></ul>
-      </div>
+
+       <section></section>
+
+       <script src="money-script.js"></script>
 </body>
-<script src="money-script.js"></script>
 </html>
